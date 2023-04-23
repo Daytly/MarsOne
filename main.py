@@ -306,6 +306,11 @@ def member():
     return render_template('card.html', user=user)
 
 
+@app.route('/table/<string:gender>/<int:age>')
+def table(gender, age):
+    return render_template('room.html', gender=gender, age=age)
+
+
 def create_json():
     result = []
     db_sess = db_session.create_session()

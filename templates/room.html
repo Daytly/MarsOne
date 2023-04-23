@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+
+thead,
+tfoot {
+    background-color: #999;
+    color: #fff;
+}
+
+</style>
+<h2 align="center">Оформление каюты</h2>
+<table align="center">
+    <thead>
+    <tr>
+        <th style="border: 1px solid #333;" align="center">
+            Цвет стен
+        </th>
+        <th style="border: 1px solid #333;" align="center">
+            Эмблема
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% if gender == "male" %}
+                <td style="border: 1px solid #333; background-color: #1c5bed;"></td>
+            {% else %}
+            {% if gender == "female" %}
+                <td style="border: 1px solid #333; background-color: #ff00cc;"></td>
+            {% else %}
+            <td style="border: 1px solid #333; background-color: #222222;"></td>
+            {% endif %}
+            {% endif %}
+        <td style="border: 1px solid #333;">
+            {% if age >= 21 %}
+                <img src="/static/img/big.png">
+            {% else %}
+                <img src="/static/img/small.png">
+            {% endif %}
+        </td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
