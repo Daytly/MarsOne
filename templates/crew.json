@@ -1,0 +1,46 @@
+[
+  {
+    "name": "\u0420\u0443\u0441\u043b\u0430\u043d",
+    "surname": "\u041a\u043e\u0441\u0442\u0438\u043d",
+    "speciality": [
+      "\u0423\u0447\u0438\u0442\u0435\u043b\u044c"
+    ],
+    "img": "/static/img/1.png"
+  },
+  {
+    "name": "\u041a\u0440\u0443\u0442",
+    "surname": "\u0424\u0440\u0443\u0442",
+    "speciality": [
+      "\u0424\u0440\u0443\u0442",
+      "rhen",
+      "frit"
+    ],
+    "img": "/static/img/1.png"
+  },
+  {
+    "name": "\u0424\u0440\u0443\u04421",
+    "surname": "\u0424\u0440\u0443\u04421",
+    "speciality": [
+      "fdsf",
+      "\u0424\u0440\u0443\u0442",
+      "кэп"
+    ],
+    "img": "/static/img/1.png"
+  },
+  {
+    "name": "\u0424\u0440\u0443\u04422",
+    "surname": "\u0424\u0440\u0443\u04422",
+    "speciality": [
+      "sdfsd"
+    ],
+    "img": "/static/img/1.png"
+  },
+  {
+    "name": "\u0424\u0440\u0443\u04423",
+    "surname": "\u0424\u0440\u0443\u04423",
+    "speciality": [
+      "hgfhgf"
+    ],
+    "img": "/static/img/1.png"
+  }
+]

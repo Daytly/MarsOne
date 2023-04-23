@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<a href="/" class="btn btn-danger">
+            Вернутся к работам
+        </a>
+<h1>Текущие Департаменты</h1>
+{% for i in range(len)%}
+<div class="col-md6 border rounded">
+    <h4>{{jobs[i].title}}</h4>
+    <div>
+        Имена участников: {{names[i]}},
+        Почта - {{jobs[i].email}}
+        <h6>Глава - {{leaders[i]}}</h6>
+    </div>
+    {% if current_user.is_authenticated and current_user == jobs[i].user %}
+    <div>
+        <a href="/departament/{{ jobs[i].id }}" class="btn btn-warning">
+            Изменить
+        </a>
+        <a href="/departament_delete/{{ jobs[i].id }}" class="btn btn-danger">
+            Удалить
+        </a>
+    </div>
+{% endif %}
+</div>
+{% endfor %}
+<a href="jobs" class="btn btn-secondary">Добавить департамент</a>
+{% endblock %}
